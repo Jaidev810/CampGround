@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+button{
+    width: 275px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #79d70f;
+    color: white;
+    cursor: pointer;
+}

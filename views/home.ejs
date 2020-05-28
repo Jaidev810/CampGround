@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <link rel="stylesheet" href="/stylesheets/home.css">
+        
+    </head>
+    <body>
+        <navbar>
+            <div>
+                <a href="/home">YelpCamp</a>
+            </div>
+
+            <ul>
+                <% if(!currentUser){ %> 
+                <li><a href="/login">Log in</a></li>
+                <li><a href="/register">Sign up</a></li>
+                <% }else{ %>
+                        <li><a href="#">Signed in as <%= currentUser.username %></a></li>
+                        <li><a href="/logout">Log out</a></li>
+                        <% } %>
+            </ul>
+        </navbar>
+
+        <section class="image">
+            <h1>Bring Home a Story</h1>
+
+            <div id="imgdiv">
+                    <div class="search">
+                        <input type="text" placeholder="  Search for campsites,tours and other recreation activities">
+                        <button>Search</button>
+                    </div>   
+            </div>
+
+        </section>
+
+        <section class="design">
+            <img src="">
+            <div class="details">
+                <p id="head">Plan for Your Trip</p>
+                <hr>
+                <p id="inform">Access tools and resources to chart the course for your next getaway or dream vacation, manage your trip details,
+                and enter for the chance to attend special events and excursions that ensure you get the most out of your Recreation.gov experience.</p>
+
+            </div>
+            <div class="photos">
+
+            </div>
+
+        </section>
+        
+    </body>
+</html>

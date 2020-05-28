@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/stylesheets/login.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="image">
+            <img src="/stylesheets/campground.jpg">
+        </div>
+        
+        <div class="login">
+            <h1>LogIn</h1>
+            <form action="/login" method="POST">
+                <div>
+                    <label>Username:</label>
+                    <input type="text" name="username" autocomplete="off" required>
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" name="password" autocomplete="off" required>
+                </div>
+                <div>
+                    <button type="submit">LogIn</button>
+                </div>
+                <div>
+                    <p>New User? <a href="/register">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+
+    </body>
+</html>
