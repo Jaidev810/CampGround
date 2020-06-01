@@ -67,6 +67,10 @@ input{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+input:focus{
+    border: 1px solid #1b6ca8;
+}
+
 
 button{
     width: 75%;
