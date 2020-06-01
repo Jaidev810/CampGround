@@ -54,7 +54,7 @@ navbar ul li a{
     background-image: url(/stylesheets/camp.jpg);
     background-repeat: no-repeat;
     background-size: 100% 60vh;
-    height: 55vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,7 +145,7 @@ hr{
     height: 2px;
 }
 
-#inform{
+.inform{
     font-size: 19px;
     padding: 10px;
     width: 90%;
@@ -207,10 +207,72 @@ hr{
 
 .img:hover{
     cursor: pointer;
+    padding: 2px;
     opacity: 0.35;
     filter: grayscale(50);
 }
 
+/* stay */
+
+.stay{
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.head{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+    position: relative;
+    top: 40px;
+}
+
+h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+.stay1{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.stay2{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.stay2 img{
+    width: 100%;
+    height: 50%;
+}
+
+
+.anch{
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 45px;
+    color: #1b6ca8;
+
+}
 
 
 /* bottom */
