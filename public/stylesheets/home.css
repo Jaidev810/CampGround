@@ -164,17 +164,20 @@ hr{
 
 .first{
     width: 40%;
-    height: 75%;
+    height: 80%;
     border: none;
     position: relative;
     top: 10%;
     background-color: #1b6ca8;
-    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1); 
+    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    background-image: url(/stylesheets/mountain.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
 }
 
 .second{
     width: 40%;
-    height: 75%;
+    height: 80%;
     border: none;
     position: relative;
     top: 10%;
@@ -189,6 +192,8 @@ hr{
     border: none;
     background-color: #1b6ca8;
     box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1); 
+    background-image: url(/stylesheets/back1.jpg);
+    background-size: 100% 100%;
 }
 
 .second2{
@@ -196,10 +201,16 @@ hr{
     height: 45%;
     border: none;
     background-color: #1b6ca8;
-    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1); 
+    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    background-image: url();
+    background-size: 100% 100%;
 }
 
-.img{
+button:hover{
+    cursor: pointer;
+}
+
+/* .img{
     width: 100%;
     height: 100%;
     
@@ -210,7 +221,7 @@ hr{
     padding: 2px;
     opacity: 0.35;
     filter: grayscale(50);
-}
+} */
 
 /* stay */
 
