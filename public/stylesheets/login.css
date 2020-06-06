@@ -63,8 +63,9 @@ input{
     width: 75%;
     height: 35px;
     background-color: rgb(226, 226, 226);
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
 }
 
 input:focus{
