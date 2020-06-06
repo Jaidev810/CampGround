@@ -21,9 +21,10 @@
                 <li><a href="/login">Log in</a></li>
                 <li><a href="/register">Sign up</a></li>
                 <% }else{ %>
-                        <li><a href="#">Signed in as <%= currentUser.username %></a></li>
-                        <li><a href="/logout">Log out</a></li>
-                        <% } %>
+                <li><a href="#">Signed in as <%= currentUser.username %></a></li>
+                <li><a href="/logout">Log out</a></li>
+                <% } %>
+                <li><a href="/home/add">Add a camp</a></li>
             </ul>
         </navbar>
 
@@ -67,8 +68,10 @@
                         <button style="border: 2px solid white;background: transparent;color: white;font-size: 15px;padding: 5px;margin-top: 70px;margin-left: 250px;">Learn More</button>
                     </div>
                     <div class="second2">
-                        <h1></h1>
-                        <p></p>
+                        <h1 style="text-align: center;">Open & Upcoming Lotteries</h1>
+                        <hr style="background-color: black;border: none;margin-left: 225px;width: 150px;">
+                        <p style="padding: 5px;color: white;">Learn more about upcoming opportunities and apply for limited-entry permits and tickets that help ensure equal access and enhance visitor experience for popular events, excursions, and recreation destinations.</p>
+                        <button style="background: transparent;border: 2px solid white;color: white;padding: 5px;font-size: 15px;margin-left: 5px;">Learn More</button>
                     </div>
                 </div>
 
@@ -116,7 +119,91 @@
 
         </section>
 
+        <section class="user">
+            <h1>Campground Uploaded By Users</h1>
+            <hr style="width: 150px;background-color: red;border: none;">
+            <% campground.forEach(function(camp){ %>
+            <div class="each">
+                <h2><%= camp.name %></h2>
+                <img src="<%= camp.imageurl %>">
+                <p><a href="/home/show/<%= camp.id %>">For more info</a></p>
+            </div>
+            <% }) %>
+
+        </section>
+
         <section class="end">
+            <div class="end1">
+                <div style="background-color: #cf7500;width: 20%;"></div>
+                <div style="background-color: #efee9d;width: 20%;"></div>
+                <div style="background-color: #0c9463;width: 20%;"></div>
+                <div style="background-color: #46b3e6;width: 20%;"></div>
+                <div style="background-color: #dff6f0;width: 20%;"></div>
+            </div>
+            <div class="end2">
+                <div class="end21">
+                    <div style="width: 40%;padding: 50px;">
+                        <h1>Bring Home a Story!</h1>
+                        <p style="opacity: 0.5;">Recreation.gov is your gateway to explore America's outdoor and cultural destinations in your zip code and across the country. We provide tools and tips to discover new adventures through a one-stop shop for inspiration and ideation, trip planning, 
+                            information sharing, and reservations. Find incredible places and experiences that help you bring home a story through Recreation.gov!
+                        </p>
+                    </div>
+                    <div style="width: 15%;
+                    padding: 50px;">
+                        <h1>Get to Know Us</h1>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Rules & Reservation Policies</li>
+                            <li>Accessibility</li>
+                            <li>Media Center</li>
+                            <li>Site Map</li>
+                        </ul>
+                    </div>
+                    <div style="width: 15%;padding: 50px;">
+                        <h1>Plan with Us</h1>
+                        <ul>
+                            <li>Find Trip Inspiration</li>
+                            <li>Build a Trip</li>
+                            <li>Buy a Pass</li>
+                            <li>Enter a Lottery</li>
+                        </ul>
+                    </div>
+                    <div style="width: 15%;padding: 50px;">
+                        <h1>Join Us</h1>
+                        <ul>
+                            <li>Get Involved</li>
+                            <li>Use Our Data</li>
+                            <li>Add Your Facility</li>
+                        </ul>
+                    </div>
+                    <div style="width: 15%;padding: 50px;">
+                        <h1>Let Us Help You</h1>
+                        <ul>
+                            <li>Your Account</li>
+                            <li>Your Reservations</li>
+                            <li>Contact Us</li>
+                            <li>Help Center</li>
+                            <li>Submit Feedback</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="end22">
+                    <i class="fas fa-campground fa-3x" style="color: rgb(226, 226, 226);"></i>
+                    <i class="far fa-compass fa-3x" style="color:grey;"></i>
+                    <i class="fas fa-map fa-3x" style="color:rgb(226, 226, 226);"></i>
+                    <i class="fas fa-thumbtack fa-3x" style="color:grey;"></i>
+                    <i class="fas fa-tree fa-3x" style="color:rgb(226, 226, 226);"></i>
+                    <i class="fas fa-mountain fa-3x" style="color:grey;"></i>
+                    <i class="fab fa-affiliatetheme fa-3x" style="color:rgb(226, 226, 226);"></i>
+                    <i class="fab fa-freebsd fa-3x" style="color:grey;"></i>
+                    <i class="fas fa-holly-berry fa-3x" style="color: rgb(226, 226, 226);"></i>
+                    <i class="fas fa-feather-alt fa-3x" style="color:grey;"></i>
+                </div>
+                <div class="end23">
+                    <i style="margin-top: 20px;margin-left: 10px;" class="far fa-copyright"></i>
+                    <p style="margin-top: 20px;">2020 YelpCamp.All rights are Reserved</p>
+                </div>
+            </div>
 
         </section>
         

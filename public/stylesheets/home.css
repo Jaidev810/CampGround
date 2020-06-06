@@ -19,6 +19,8 @@ navbar{
     z-index: 1;
     justify-content: space-between;
     background-color: white;
+    border-bottom: 0.5px solid grey;
+    box-shadow: 2px 2px 2px rgba(226, 226, 226, 0.3);
 }
 
 navbar div{
@@ -202,7 +204,7 @@ hr{
     border: none;
     background-color: #1b6ca8;
     box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
-    background-image: url();
+    background-image: url(/stylesheets/back2.jpg);
     background-size: 100% 100%;
 }
 
@@ -285,10 +287,120 @@ h1{
 
 }
 
+/* user */
+
+.user{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.each{
+    width: 275px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.each h2{
+    text-transform: capitalize;
+    padding: 5px;
+    text-align: center;
+}
+
+.each img{
+    width: 100%;
+    padding: 5px;
+    height: 400px;
+}
+
+.each a{
+    text-decoration: none;
+    font-size: medium;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+
+
 
 /* bottom */
 
 .end{
+    margin-top: 30px;
     width: 100%;
-    height: 30vh;
+    height: 65vh;
+    background-color: #1b2a49;
+    display: flex;
+    flex-direction: column;
 }
+
+.end1{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.end2{
+    width: 100%;
+    height: 65%;
+    border: 1px solid;
+    
+    
+}
+
+.end21{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+
+.end21 ul{
+    list-style: none;
+}
+
+.end21 h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.end21 ul li{
+    padding: 3px;
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.end22{
+    width: 100%;
+    height: 30%;
+    background-color: #465881;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.end23{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
