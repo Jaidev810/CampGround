@@ -6,11 +6,13 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #000;
+    
 }
 
 .details{
+    position: fixed;
     width: 100%;
     height: 100%;
     display: flex;
@@ -19,11 +21,13 @@ body{
     align-items: center;
     font-size: 50px;
     color: white;
+    z-index: 1;
 }
 
 a{
     text-decoration: none;
     padding: 10px;
+    z-index: 1;
 }
 
 button{
@@ -35,4 +39,61 @@ button{
     background-color: #79d70f;
     color: white;
     cursor: pointer;
+    z-index: 1;
+}
+
+.background{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+}
+
+.background div{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.backimg{
+    width: 100%;
+    height: 100%;
+}
+
+.backimg img{
+    width: 100vw;
+    height: 100vh;
+}
+
+.button{
+    position: fixed;
+    top: 80%;
+    left: 47%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.btn{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    margin: 5px;
+    background-color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: lightblue;
 }

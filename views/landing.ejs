@@ -11,11 +11,25 @@
     </head>
     <body>
         <div class="details">
-            <p>Welcome to Campground</p>
+            <p style="z-index: 1;">Welcome to Campground</p>
             <a href="/home"><button>View Campgounds</button></a>
         </div>
 
+        <div class="background">
+            <div class="backimg" id="backimg1"><img src="./stylesheets/images/land1.jpg"></div>
+            <div class="backimg" id="backimg2"><img src="./stylesheets/images/land2.jpg"></div>
+            <div class="backimg" id="backimg3"><img src="./stylesheets/images/land3.jpg"></div>
+        </div>
 
+        <div class="button">
+            <button class="btn" id="btn1"></button>
+            <button class="btn" id="btn2"></button>
+            <button class="btn" id="btn3"></button>
+        </div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+        <script src="./javascripts/app.js"></script>
     </body>
 </html>
