@@ -10,36 +10,41 @@
     <body>
 
         <navbar>
-            <h1><a href="/home">YelpCamp</a></h1>
+            <div>
+                <a href="/home">YelpCamp</a>
+            </div>
 
             <ul>
                 <% if(!currentUser){ %> 
                 <li><a href="/login">Log in</a></li>
                 <li><a href="/register">Sign up</a></li>
                 <% }else{ %>
-                        <li><a href="#">Signed in as <%= currentUser.username %></a></li>
-                        <li><a href="/logout">Log out</a></li>
-                        <% } %>
+                <li><a href="#">Signed in as <%= currentUser.username %></a></li>
+                <li><a href="/logout">Log out</a></li>
+                <% } %>
+                <li><a href="/home/add">Add a camp</a></li>
             </ul>
         </navbar>
 
-        <div class="info">
-            <div class="sidebar">
 
+        <div class="show">
+            <div class="sidebar">
+                <ul>
+                    <li>Price</li>
+                    <li>Description</li>
+                    <li>reviews</li>
+                    <li>More Images</li>
+                </ul>
             </div>
             <div class="details">
                 <% campground.forEach(function(campground){ %>
-                <h1 style="text-align: center;text-transform: uppercase;padding: 5px;"><%= campground.name %></h2>
-                <img src=<%= campground.imageurl %>>
-                <p style="position: relative;display: flex;flex-direction: row-reverse;padding-right: 10px;">Price - $<%= campground.price %></p>
-                <p> Description : <br> <%= campground.description %></p>
+                <h1><%= campground.name %></h1>
+                <img src="<%= campground.imageurl %>">
                 <% }) %>
-                <h3>Comments</h3>
-                <% if(currentUser){ %>
-                <textarea></textarea>
-                <% } %>
             </div>
         </div>
+
+
         
 
 
