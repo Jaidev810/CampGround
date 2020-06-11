@@ -210,6 +210,13 @@ hr{
 
 button:hover{
     cursor: pointer;
+    
+}
+
+.imgbtn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
 }
 
 /* .img{
