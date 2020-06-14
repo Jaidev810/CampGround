@@ -11,6 +11,11 @@
     <body>
         <div class="image">
             <img src="/stylesheets/images/campground.jpg">
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
         </div>
         
         <div class="login">
@@ -33,6 +38,17 @@
             </form>
         </div>
 
+        <script>
+            const line1 = document.querySelector('.line1');
+            const line2 = document.querySelector('.line2');
 
+            line1.addEventListener('click', ()=>{
+                window.location.href = "/home"
+            });
+
+            line2.addEventListener('click', ()=> {
+                window.location.href = "/home"
+            })
+        </script>
     </body>
 </html>

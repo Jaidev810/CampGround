@@ -16,6 +16,9 @@ body{
 .image{
     width: 100%;
     height: 22%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .image img{
@@ -23,6 +26,32 @@ body{
     height: 100%;
 }
 
+.burger{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.line1{
+    width: 80%;
+    height: 15%;
+    border: none;
+    background-color: grey;
+    transform: rotate(-45deg) translate(1px, 6px);
+    cursor: pointer;
+}
+
+.line2{
+    width: 80%;
+    height: 15%;
+    border: none;
+    background-color: grey;
+    transform: rotate(45deg) translate(2px, -6px);
+    cursor: pointer;
+}
 
 .login{
     width: 100%;
