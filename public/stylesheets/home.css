@@ -65,9 +65,13 @@ navbar ul li a{
     top: 80px;
 }
 
+#search:hover{
+    background-color: #2e6b8c;
+}
+
 .image h1{
     font-size: 60px;
-    color: white;
+    color: rgb(226, 226, 226);
     text-transform: uppercase;
 }
 
@@ -293,6 +297,98 @@ h1{
     color: #1b6ca8;
 
 }
+/* inspire */
+
+.inspire{
+    width: 100%;
+    height: 130vh;
+}
+
+.inspire-head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.inspire-head h1{
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.inspire-head p{
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.inspire-img{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#inspire-img1{
+    width: 65%;
+    height: 90%;
+}
+
+#inspire-img1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.inspire-imgmul{
+    width: 23%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#inspire-imgmul1{
+    height: 31%;
+}
+
+#inspire-imgmul2{
+    height: 31%;
+}
+
+#inspire-imgmul3{
+    height: 31%;
+}
+
+#inspire-imgmul2{
+    margin-top: 20px;
+}
+
+#inspire-imgmul3{
+    margin-top: 20px;
+}
+
+#inspire-imgmul1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#inspire-imgmul2 img{
+    width: 100%;
+    height: 100%;
+}
+
+#inspire-imgmul3 img{
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /* user */
 
@@ -301,6 +397,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(226, 226, 226);
 }
 
 .user h1{
