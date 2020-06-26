@@ -339,6 +339,22 @@ h1{
 #inspire-img1{
     width: 65%;
     height: 90%;
+    z-index: 0;
+}
+
+#inspire-imgname{
+    z-index: 1;
+    position: relative;
+    top: -21.7%;
+    width: 400px;
+    height: 140px;
+    background-color: rgba(226, 226, 226, 0.7);
+}
+
+#inspire-imgname p{
+    margin-left: 30px;
+    font-size: 25px;
+    padding: 20px;
 }
 
 #inspire-img1 img{
@@ -355,6 +371,21 @@ h1{
 
 #inspire-imgmul1{
     height: 31%;
+}
+
+#inspire-imgmul1name{
+    z-index: 1;
+    position: relative;
+    top: -30.7%;
+    width: 80%;
+    height: 60px;
+    background-color: rgba(226, 226, 226, 0.7);
+}
+
+#inspire-imgmul1name p{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 #inspire-imgmul2{
