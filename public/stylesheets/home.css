@@ -336,11 +336,14 @@ h1{
     justify-content: space-around;
 }
 
+
 #inspire-img1{
     width: 65%;
     height: 90%;
     z-index: 0;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
 }
+
 
 #inspire-imgname{
     z-index: 1;
@@ -357,9 +360,19 @@ h1{
     padding: 20px;
 }
 
+#inspire-img1{
+    overflow: hidden;
+}
+
 #inspire-img1 img{
     width: 100%;
     height: 100%;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+#inspire-img1 img:hover{
+    transform: scale(1.2);
 }
 
 .inspire-imgmul{
@@ -367,10 +380,13 @@ h1{
     height: 90%;
     display: flex;
     flex-direction: column;
+    z-index: 0;
 }
 
 #inspire-imgmul1{
     height: 31%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    overflow: hidden;
 }
 
 #inspire-imgmul1name{
@@ -390,35 +406,51 @@ h1{
 
 #inspire-imgmul2{
     height: 31%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    overflow: hidden;
+    margin-top: 20px;
 }
 
 #inspire-imgmul3{
     height: 31%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    margin-top: 20px;
+    overflow: hidden;
 }
 
-#inspire-imgmul2{
-    margin-top: 20px;
-}
-
-#inspire-imgmul3{
-    margin-top: 20px;
-}
 
 #inspire-imgmul1 img{
     width: 100%;
     height: 100%;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 #inspire-imgmul2 img{
     width: 100%;
     height: 100%;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 #inspire-imgmul3 img{
     width: 100%;
     height: 100%;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
+#inspire-imgmul1 img:hover{
+    transform: scale(1.2);
+}
+
+#inspire-imgmul2 img:hover{
+    transform: scale(1.2);
+}
+
+#inspire-imgmul3 img:hover{
+    transform: scale(1.2);
+}
 
 
 /* user */
@@ -429,6 +461,7 @@ h1{
     flex-direction: column;
     align-items: center;
     background-color: rgb(226, 226, 226);
+    cursor: pointer;
 }
 
 .user h1{
@@ -440,11 +473,13 @@ h1{
 }
 
 .each{
-    width: 275px;
-    border: 1px solid;
+    width: 300px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
 }
 
 .each h2{
@@ -456,14 +491,14 @@ h1{
 .each img{
     width: 100%;
     padding: 5px;
-    height: 400px;
+    height: 375px;
 }
 
 .each a{
-    text-decoration: none;
-    font-size: medium;
+    font-size: 18px;
     text-transform: capitalize;
     padding: 5px;
+    margin-left: 90px;
 }
 
 
