@@ -53,7 +53,7 @@ navbar ul li a{
 
 .image{
     width: 100%;
-    background-image: url(/stylesheets/images/camp.jpg);
+    background-image: url(/stylesheets/images/camp2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 60vh;
     height: 65vh;
@@ -71,7 +71,7 @@ navbar ul li a{
 
 .image h1{
     font-size: 60px;
-    color: rgb(226, 226, 226);
+    color: black;
     text-transform: uppercase;
 }
 

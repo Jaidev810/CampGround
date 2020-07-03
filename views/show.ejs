@@ -6,6 +6,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/stylesheets/show.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
     </head>
     <body>
 
@@ -41,12 +42,43 @@
                 </ul>
             </div>
             <div class="details">
-                <% campground.forEach(function(campground){ %>
-                <h1><%= campground.name %></h1>
-                <img src="<%= campground.imageurl %>">
-                <% }) %>
+                <div class="home">
+                    <% campground.forEach(function(campground){ %>
+                    <h1><%= campground.name %></h1>
+                    <img src="<%= campground.imageurl %>">
+                    <% }) %>
+                </div>
+
+                <div class="price">
+                    <% campground.forEach(function(campground){ %>
+                        <h1>Price of the campground :</h1>
+                        <h2>$ <%= campground.price %>/per Night</h2>
+                        <p>Space for only 2 person in one Camp. For an extra bed please inform the authorities one day prior to arrival
+                            orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
+                            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, 
+                            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more 
+                            obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered 
+                            the undoubtable source.
+                        </p>
+                        <h3>Amenities & Services</h3>
+                        <ul>
+                            <li>Free Internet</li>
+                            <li>Free Breakfast</li>
+                            <li>Free Lunch or Free Dinner</li>
+                            <li>Free Early Check-in</li>
+                            <li>BonFire</li>
+                            <li>Wake Up</li>
+                        </ul>
+                        <span>*Taxes and other included</span>
+                    <% }) %>
+                </div>
+                
             </div>
-        </div>
+        </div> 
 
 
         
